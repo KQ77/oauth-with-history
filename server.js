@@ -1,5 +1,7 @@
 try {
-  require('./secrets');
+  const secrets = require('./secrets');
+  process.env.client_id = secrets.client_id;
+  process.env.client_secret = secrets.client_secret;
 } catch (ex) {
   console.log(ex);
   console.log(

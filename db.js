@@ -120,7 +120,7 @@ User.authenticate = async (code) => {
 };
 
 const syncAndSeed = async () => {
-  await conn.sync({ force: true });
+  await conn.sync();
 };
 
 module.exports = {
